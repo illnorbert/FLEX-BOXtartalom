@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*{ padding:0; margin:0; border:0; font-family: Roboto; font-size: 14px; }
+
+body{
+    background-image: url('ocean.jpg');
+    background-size: 100%;
+    background-repeat: repeat;
+    color: #9c9c9c;
+    margin: 5px;
+    padding: 50px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+article{
+    background: #e8e8e8;
+    flex: 1 1 100px;
+    margin: 5px;
+    /*flex-grow: ;
+    flex-shrink: ;
+    flex-basis: ;*/
+}
+article header{
+    padding: 50px;
+    height: 245px;
+    background: white;
+    background-repeat: no-repeat;
+    color: gray;
+    font-size: 16px;
+    font-weight: bold;
+}
+article:nth-of-type(1) {
+    order: 1
+}
+article:nth-of-type(2) {
+    order: 2
+}
+article:nth-of-type(3) {
+    order: 3
+}
+article:nth-of-type(4) {
+    order: 4
+}
+article:nth-of-type(5) {
+    order: 5
+}
+
+article:nth-of-type(1) header { 
+    background-image: url('html.jpg');
+    background-size: 100%;}
+article:nth-of-type(2) header { 
+    background-image: url('js.png');
+    background-size: 100%;}
+article:nth-of-type(3) header { 
+    background-image: url('java.png');
+    background-size: 100%;}
+article:nth-of-type(4) header { 
+    background-image: url('sql.png');
+    background-size: 100%;}
+article:nth-of-type(5) header { 
+    background-image: url('angol.png');
+    background-size: 100%;}
+
+
+ul{
+    padding: 0 10px ;
+}
+li{
+    list-style:none;
+    padding: 10px 0;
+    border-bottom: 1px solid #c9c9c9;
+}
+li.more{
+    display: none;
+}
+
+p.more-items{
+    padding: 20px 0 10px 10px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+@media all and (max-width: 500px){
+    section {
+        flex-flow: column wrap;
+    }
+    article {
+        flex-basis: initial;
+    }
+}
